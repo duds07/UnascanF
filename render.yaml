@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: unascanf-app
+    env: node
+    repo: https://github.com/duds07/UnascanF
+    branch: main
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    rootDir: .
+    autoDeploy: true
+    envVars:
+      # Add your environment variables here
+      # DB_URL: "your_database_url"
+      # R2_BUCKET: "your_r2_bucket_config"
